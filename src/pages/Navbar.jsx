@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { Icon } from "@iconify/react";
+import Banner from "./Banner";
 
 const Navbar = () => {
   const document = [
@@ -15,8 +16,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-4">
-      <div className="flex  justify-between">
+    <div className="mx-auto mt-4">
+      <div className="flex  justify-around items-center">
         <img src={logo} alt="" />
         <div className="">
           {document?.map((text, index) => (
@@ -43,6 +44,9 @@ const Navbar = () => {
           <Icon className="text-4xl text-center" icon="typcn:shopping-cart" />
         </div>
       </div>
+     <div className=" mt-4">
+     <Banner></Banner>
+     </div>
     </div>
   );
 };
