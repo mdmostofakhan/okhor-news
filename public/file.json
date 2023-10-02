@@ -1,10 +1,128 @@
- [
-    { 
-      "_id": 1,
-      "category": "বিসিএস সিলেবাস ",
-      "subcategory": {
-         
-      }
-   
+[
+  {
+    "_id": 1,
+    "bgColor": "bg-[#1F2659]",
+    "category": "বিসিএস সিলেবাস",
+    "subcategory": [{
+        "name": "প্রিলিমিনিয়ার",
+        "data": [ 
+          {
+            "text": "perimear"
+          }
+        ]
+    },
+    {
+      "name": "লিখিত",
+      "data": [
+        { 
+          "text": "format"
+        }
+      ]
+    },
+    {
+      "name": "ভাইভা",
+      "data": [
+        {
+          "text": "vaiva"
+        }
+      ]
     }
- ]
+   
+  ]
+  },
+
+  {
+    "_id": 2,
+    "bgColor": "bg-[#1F2659]",
+    "category": "বিসিএস প্রশ্ন     ",
+    "subcategory": [
+      {
+      "name": "প্রিলিমিনিয়ার",
+      "data": [
+        {
+          "text": "format"
+        }
+      ]
+    },
+   {
+    "name": "লিখিত",
+    "data":[
+      {
+        "text": "format"
+      }
+    ]
+   },
+   {
+    "name": "ভাইভা",
+    "data": [
+      {
+        "text": "format"
+      }
+    ]
+  }
+  ]
+
+  },
+  { 
+    "_id": 3,
+    "bgColor": "bg-[#1F2659]",
+    "category": "বিসিএস প্রস্তুতি",
+    "subcategory": [
+      {
+        "name": "সাধারণজ্ঞান",
+        "data": [
+          {
+            "text": "format"
+          }
+        ]
+      },
+      {
+        "name": "লিখিত",
+        "data":[
+          {
+            "text": "format"
+          }
+        ]
+       },
+       {
+         "name": "ভাইভা",
+         "data": [
+          {
+            "text": "format"
+          }
+         ]
+       }
+    ]
+  },
+  { 
+    "_id": 4,
+    "bgColor": "bg-[#1F2659]",
+    "category": "বই সমাবেশ",
+    "subcategory": [
+      {
+        "name": "সরকারী চাকরি PDF",
+        "data": [
+          { 
+            "text": "format"
+          }
+        ]
+      },
+      {
+        "name": "বেসরকারী চাকরি PDF",
+        "data":[
+          {
+            "text": "format"
+          }
+        ]
+       },
+       {
+         "name": "এনজিও চাকরি PDF",
+         "data": [
+          {
+            "text": "format"
+          }
+         ]
+       }
+    ]
+  }
+]

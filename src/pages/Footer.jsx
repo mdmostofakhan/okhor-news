@@ -1,11 +1,11 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import logo from "../assets/logo.png";
+import logo2 from "../assets/footer-logo.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1F2659] grid justify-center bottom-0   items-center mt-6 w-full ">
-      <img className="bg-transparent mt-4 text-white " src={logo} alt="" />
+    <footer className="bg-[#1F2659] grid justify-center   items-center mt-12 w-full ">
+      <img className="bg-transparent mt-4 text-white " src={logo2} alt="" />
       <div className="bg-transparent gap-4 mt-4  flex">
         <div className="bg-transparent ">
           <Icon
@@ -13,7 +13,9 @@ const Footer = () => {
             icon="ri:facebook-fill"
           />
         </div>
-        <p className="bg-transparent text-white">in</p>
+        <div className="bg-transparent">
+        <Icon className="text-center" icon="mdi:linkedin" />
+        </div>
   
         <div className="bg-transparent">
           <Icon
@@ -22,7 +24,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="bg-transparent mt-4">
+      <div className="bg-transparent  mt-4">
         <p className="text-white text-left bg-transparent">Lorem Ipsum is simply dummy text of the printing and <br /> typesetting
         industry. Lorem Ipsum has been the industry's <br /> standard dummy text ever
         since the 1500s,</p>
