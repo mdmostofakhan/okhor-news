@@ -14,6 +14,7 @@ const Banner = () => {
 
   return (
     <div>
+
       <div
         className="flex bg-blue-600 h-96 bg-cover bg-center justify-start items-center "
         style={{
@@ -69,7 +70,15 @@ const Banner = () => {
           </div>
         ))}
       </div>
-
+          
+          <div>
+            jjjjjjjjjjjjj <br />
+            sssssssssss <br />
+            bbbbbbbbbbbbbbb <br />
+            bbbbbbbbbbbbb <br />
+            <br />
+            bbbbbbbbbb
+          </div>
      
     </div>
   );
