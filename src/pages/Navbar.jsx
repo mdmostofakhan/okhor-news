@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { Icon } from "@iconify/react";
 import Banner from "./Banner";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const document = [
@@ -24,7 +25,7 @@ const Navbar = () => {
             <div key={index}>
               <div className="flex gap-8">
                 <p>{text.home}</p>
-                <p>{text.about}</p>
+                <Link to="/about"><p>{text.about}</p></Link>
                 <p>{text.book}</p>
                 <p>{text.job}</p>
                 <p>{text.contact}</p>

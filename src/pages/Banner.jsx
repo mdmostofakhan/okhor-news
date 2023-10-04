@@ -1,25 +1,20 @@
 import React, { useEffect, useState } from "react";
 import banner from "../assets/banner.png";
-import { data } from "autoprefixer";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
-  const [users, setUsers] = useState();
+  const [news, setNews] = useState();
 
   useEffect(() => {
     fetch("file.json")
       .then((res) => res.json())
-      .then((data) => setUsers(data));
-    console.log(users);
+      .then((data) => setNews(data));
+    console.log(news);
   }, []);
-
-
-
-
 
   return (
     <div>
-
       <div
         className="flex  bg-blue-600 h-96 bg-cover bg-center justify-start items-center "
         style={{
@@ -38,12 +33,16 @@ const Banner = () => {
           </div>
         </p>
       </div>
-      <div className="flex  bg-transparent top-[426px] mx-56 absolute  gap-6">
-        {users?.map((user, index) => (
-          <div className={`${user.bgColor}  p-2 w-80`} key={index}>
-              <p className="bg-transparent   flex justify-center items-center gap-4 text-white"> <Icon className="bg-transparent" icon="mdi:linkedin" /> {user.category}  </p>
-          </div>
 
+      <div className="flex  bg-transparent top-[426px] mx-56 absolute  gap-6">
+        { 
+           news?.map((news, index) => (
+           <div className={`${news.bgColor}  p-2 w-80`} key={index}>
+              <p className="bg-transparent   flex justify-center items-center gap-4 text-white">            
+            <Icon className="bg-transparent" icon="mdi:linkedin" />
+              {news.category}
+            </p>
+          </div>
         ))}
       </div>
     </div>
