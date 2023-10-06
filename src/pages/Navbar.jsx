@@ -28,7 +28,7 @@ const Navbar = () => {
                 <Link to="/about"><p>{text.about}</p></Link>
                 <p>{text.book}</p>
                 <p>{text.job}</p>
-                <p>{text.contact}</p>
+                <Link to="/contact"><p>{text.contact}</p></Link>
               </div>
             </div>
           ))}

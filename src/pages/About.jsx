@@ -12,9 +12,9 @@ const About = () => {
         }}
       ></div>
       <div className="flex mt-4 justify-center items-center">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-6xl opacity-50 text-gray-300 font-bold">
           A <span className="text-red-600">B</span> O{" "}
-          <span className="text-red-600">U</span> T
+          <span className="text-red-600 ">U</span> T
         </h1>
       </div>
       <p className="mt-12 mx-9  text-black font-semibold italic text-xl text-center">
