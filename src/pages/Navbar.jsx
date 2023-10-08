@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="flex justify-center gap-6">
           <div className="flex border w-32 h-8 p-1 justify-center  border-black gap-2">
             <div>
-              <button>Log in</button>
+              <Link to="/login"><button>Log in</button></Link>
             </div>
             <div>
               <Icon icon="icon-park:to-right" />
