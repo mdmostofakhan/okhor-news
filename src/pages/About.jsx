@@ -42,7 +42,7 @@ const About = () => {
               <img className="w-[350px] h-[300px] " src={image2} alt="" />
             </div>
           </div>
-         <div className="bg-[rgb(250,76,49)] absolute top-[48%] left-[42%] text-center p-8    bg-transparent">
+         <div className=" bg-red-500 absolute top-[44%] left-[42%] text-center p-8    bg-transparent">
          <p className="bg-transparent my-3 text-white"><span className="text-5xl bg-transparent font-bold">180+</span> <br /> Get National <br /> Award</p>
          </div>
           </div>
@@ -88,8 +88,7 @@ const About = () => {
               <p className="mt-6 leading-7">
                 আপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে সম্প্রতি ঘটা
                 ঘটনা বা বাংলাদেশের  সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য চান, 
-                তাহলে দয়া করে <br /> সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট
-                 
+                তাহলে দয়া করে <br /> সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে বা 
                 সেই বিষয়গুলির সাথে সম্প্রতি ঘটা
               </p>
             </p>
