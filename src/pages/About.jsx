@@ -1,75 +1,54 @@
 import React from "react";
-import image from "../assets/bg-img.jpg";
-import image2 from "../assets/image.jpg";
+import image from "../assets/bg-images.png";
+import image2 from "../assets/imag-2.png";
+import { Icon } from "@iconify/react";
+import image3 from "../assets/image-3.jpg";
+// import Marquee from "react-fast-marquee";
 
 const About = () => {
   return (
-    <div className=" mx-auto ">
-      <div
-        className=" w-full h-96 bg-cover bg-no-repeat"
+    <div className="my-28 container mx-auto  ">
+      {/* <div className="">
+     <div
+        className=" w-full  h-96 bg-cover flex-col   flex justify-center items-center bg-no-repeat"
         style={{
           backgroundImage: `url(${image})`,
         }}
-      ></div>
-      <div className="flex mt-4 justify-center items-center">
-        <h1 className="text-6xl opacity-50 text-gray-300 font-bold">
-          A <span className="text-red-600">B</span> O{" "}
-          <span className="text-red-600 ">U</span> T
+      >
+       <div className="flex bg-transparent  ">
+        <h1 className="text-5xl bg-transparent  text-[rgb(241,241,245)] font-bold">
+          A <span className="text-red-600 bg-transparent">B</span> O{" "}
+          <span className="text-red-600 bg-transparent">U</span> T   <span className="text-red-600 bg-transparent">U</span> S
         </h1>
       </div>
-      <p className="mt-12 mx-9  text-black font-semibold italic text-xl text-center">
-        আপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে সম্প্রতি ঘটা ঘটনা বা{" "}
-        <br />
-        বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য চান, তাহলে দয়া করে{" "}
-        <br />
-        সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে
-      </p>
-      <div className="mt-8  container mx-auto">
-        <div className="grid grid-cols-2 gap-8">
-        <p>
-          আপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে সম্প্রতি ঘটা ঘটনা বা
-          বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য চান, তাহলে দয়া করে
-          সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে <br /> <br />
-          সম্প্রতি ঘটা ঘটনা বা বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য
-          চান, তাহলে দয়া করে সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে 
-        </p>
-        <p>
-          আপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে সম্প্রতি ঘটা ঘটনা বা
-          বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য চান, তাহলে দয়া করে
-          সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে <br /> <br />
-          সম্প্রতি ঘটা ঘটনা বা বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য
-          চান, তাহলে দয়া করে সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে 
-        </p>
+      </div>
+     </div> */}
+
+      <div className="flex flex-col mx-5 lg:mx-5 lg:flex-row gap-8">
+        <div className="">
+          <h1 className="font-semibold leading-10 mt-2 text-red-700">
+            বাংলাদেশের সার্কুলার বিষয়ে
+          </h1>
+          <p>
+            <span className="text-5xl bg-transparent font-semibold mt-4 text-black">
+              Best Company <br /> Especially In Business
+            </span>{" "}
+            <br /> <br />
+            <p className="mt-6">
+              আপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে সম্প্রতি ঘটা
+              ঘটনা বা বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য চান, তাহলে
+              দয়া করে সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে বা সেই
+              বিষয়গুলির
+            </p>
+          </p>
+          <div className="border w-64 p-4 mt-8 rounded border-green-600 flex justify-center items-center gap-2 ">
+            <button className="font-semibold text-xl">DISCOVER MORE</button>
+            <Icon className="text-xl" icon="mdi:arrow-right-bold" />
+          </div>
         </div>
-       <div className="mt-6">
-          <img className=" w-full h-80" src={image2} alt="" />
-       </div>
-       <div className="grid grid-cols-3 mt-6 gap-8">
-        <p className="border bg-transparent border-emerald-700 rounded p-2">
-            <h1 className="text-xl bg-transparent font-semibold mb-2">Bangladesh</h1>
-          আপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে সম্প্রতি ঘটা ঘটনা বা
-          বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য চান, তাহলে দয়া করে
-          সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে 
-          সম্প্রতি ঘটা ঘটনা বা বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য
-          চান, তাহলে দয়া করে সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে 
-        </p>
-        <p className="border bg-transparent border-emerald-700 rounded p-2">
-            <h1 className="text-xl bg-transparent font-semibold mb-2">Bangladesh</h1>
-          আপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে সম্প্রতি ঘটা ঘটনা বা
-          বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য চান, তাহলে দয়া করে
-          সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে 
-          সম্প্রতি ঘটা ঘটনা বা বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য
-          চান, তাহলে দয়া করে সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে 
-        </p>
-        <p className="border bg-transparent border-emerald-700 rounded p-2">
-            <h1 className="text-xl bg-transparent font-semibold mb-2">Bangladesh</h1>
-          আপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে সম্প্রতি ঘটা ঘটনা বা
-          বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য চান, তাহলে দয়া করে
-          সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে বা সেই বিষয়গুলির সাথে 
-          সম্প্রতি ঘটা ঘটনা বা বাংলাদেশের সার্কুলার বিষয়ে কোনও প্রশ্ন বা তথ্য
-          চান, তাহলে দয়া করে সম্পর্ককরে জিজ্ঞাসআপনি কোনও নির্দিষ্ট বিষয়ে 
-        </p>
-       
+        <div className="">
+          <img src={image2} alt="" />
+          <div></div>
         </div>
       </div>
     </div>

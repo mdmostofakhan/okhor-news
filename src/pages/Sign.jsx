@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Sign = () => {
     return (
         <div className=" container mx-auto  my-20">
-        <div className="  shadow-2xl w-1/2  bg-white ">
+        <div className="  shadow-2xl w-1/2 flex-col  mx-5 lg:mx-0 md:flex-col    bg-white ">
           <div className=" bg-transparent p-20 ">
             <div className=" bg-transparent">
               <p className="bg-transparent">Welcome to</p>
@@ -73,7 +73,7 @@ const Sign = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-[#a97726] flex justify-center hover:bg-[#e56af1] items-center w-full p-4 mt-8">
+            <div className="bg-[#1F2659] flex justify-center hover:bg-[#5b68c6] items-center w-full p-4 mt-8">
               <button className="text-white ">Log In</button>
             </div>
             <div className="flex bg-transparent justify-end ">
@@ -95,15 +95,15 @@ const Sign = () => {
               <div className="divider w-10/12 bg-transparent mx-auto text-black p-8">Or</div>
             </div>
   
-          <div className="flex bg-transparent gap-4 w-full">
-          <div className="border w-1/2 flex gap-2 items-center hover:bg-gray-200 rounded-none justify-center border-black p-3 mt-4">
+          <div className="flex bg-transparent lg:w-full gap-4 w-full">
+          <div className="border w-1/2 flex gap-2 items-center  hover:bg-gray-200 rounded-none  justify-center border-black p-3 mt-4">
               <Icon
                 icon="entypo-social:google"
                 className="text-white bg-red-600 rounded-full p-2 text-3xl"
               />
               <span className="normal-case bg-transparent">Log in with Google</span>
             </div>
-            <div className="border w-1/2 flex gap-2 items-center hover:bg-gray-200 rounded-none bg-transparent justify-center border-black p-3 mt-4">
+            <div className="border w-1/2 flex gap-2 items-center hover:bg-gray-200 rounded-none lg-w-auto bg-transparent justify-center border-black p-3 mt-4">
             <Icon icon="ic:baseline-facebook" className='text-4xl bg-transparent text-[#1877F2]' />
               <span className="normal-case bg-transparent">Log in with Facebook</span>
             </div>

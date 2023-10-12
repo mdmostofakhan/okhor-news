@@ -18,12 +18,12 @@ const Navbar = () => {
 
   return (
     <div className="mx-auto mt-4">
-      <div className="flex  justify-around items-center">
+      <div className="flex  justify-around md:flex-col flex-col lg:flex-row mx-5 lg:mx-0 items-center">
         <img src={logo} alt="" />
         <div className="">
           {document?.map((text, index) => (
             <div key={index}>
-              <div className="flex gap-8">
+              <div className="flex flex-col lg:flex-row mx-5 gap-8">
                 <p>{text.home}</p>
                 <Link to="/about"><p>{text.about}</p></Link>
                 <p>{text.book}</p>
@@ -33,16 +33,18 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center gap-6">
+        <div className="flex justify-center lg:flex-row flex-col gap-6">
           <div className="flex border w-32 h-8 p-1 justify-center  border-black gap-2">
             <div>
               <Link to="/login"><button>Log in</button></Link>
             </div>
-            <div>
+            <div className="flex justify-center items-center">
               <Icon icon="icon-park:to-right" />
             </div>
           </div>
-          <Icon className="text-4xl text-center" icon="typcn:shopping-cart" />
+          <div className="flex items-center justify-center">
+          <Icon className="text-4xl" icon="typcn:shopping-cart" />
+          </div>
         </div>
       </div>
      <div className=" mt-4">

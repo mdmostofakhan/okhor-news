@@ -44,9 +44,9 @@ const Banner = () => {
   ];
 
   return (
-    <div>
+    <div className="">
       <div
-        className="flex   h-96 bg-cover bg-center justify-start items-center "
+        className="flex   h-96 bg-cover bg-center lg:mx-0 lg:flex-col flex-col mx-5 justify-start items-center "
         style={{
           backgroundImage: `url(${banner})`,
         }}
@@ -64,9 +64,11 @@ const Banner = () => {
         </p>
       </div>
 
-      <div className="flex  bg-transparent top-[426px] mx-56 absolute  gap-6">
+      <div className="flex  bg-transparent  top-[426px] md:flex-col mx-56 absolute  gap-6">
         {news?.map((news, index) => (
-          <div className={`${news.bgColor}  p-2 w-80`} key={index}>
+          <div className={`${news.bgColor}  p-2 w-80`}
+           key={index}
+           >
             <p className="bg-transparent   flex justify-center items-center gap-4 text-white">
               <Icon className="bg-transparent" icon="mdi:linkedin" />
               {news.category}
@@ -75,7 +77,7 @@ const Banner = () => {
         ))}
       </div>
 
-      <div className="mt-10 ">
+      <div className="mt-10 mx-5 lg:mx-0 flex-col lg:flex-row ">
         <Swiper
           pagination={{
             type: "progressbar",
@@ -88,18 +90,19 @@ const Banner = () => {
             <div key={index}>
               <SwiperSlide>
                 <div
-                className="h-96 bg-cover  relative"
-                style={{
-                  backgroundImage: `url(${banner.image})`
-                }}
+                  className="h-96 bg-cover  relative"
+                  style={{
+                    backgroundImage: `url(${banner.image})`,
+                  }}
                 >
-                 
-                 <p className="bg-transparent font-bold w-[400px]  leading-10 ml-32 text-2xl  absolute top-28  left-20" >{banner.title}</p> 
+                  <p className="bg-transparent font-bold w-[400px]  leading-10 ml-32 text-2xl  absolute top-28  left-20">
+                    {banner.title}
+                  </p>
                   <div className="bg-transparent top-60 absolute left-52 ">
-                  <button className="border font-semibold border-black text-center w-36 p-2">{banner.button}</button>
+                    <button className="border font-semibold border-black text-center w-36 p-2">
+                      {banner.button}
+                    </button>
                   </div>
-                
-                  
                 </div>
               </SwiperSlide>
             </div>

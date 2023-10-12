@@ -66,16 +66,16 @@ const Contact = () => {
 
           {/* second */}
           <div className="w-full">
-            <h1 className="text-3xl text-red-600 font-bold">Contact</h1>
+            <h1 className="text-3xl text-black font-bold">Contact</h1>
             <div className="mt-4">
               <h2 className="text-2xl font-semibold text-[#1F2659]">
                 Main Office:
               </h2>
               <p className="mt-2">
-                <span className="text-red-600 ">Address</span>: 1600
-                Pennsylvania Ave NW, Washington, DC 20500 <br />{" "}
-                <span className="text-green-700">Phone</span>: +990 (312) 123 45
-                67 <br /> <span className="text-[#1F2659]">Email</span>:
+                <span className="text-red-600 ">Address</span>: <span className="text-gray-800">1600
+                Pennsylvania Ave NW, Washington, DC 20500</span> <br />{" "}
+                <span className="text-red-600 ">Phone</span>: +990 (312) 123 45
+                67 <br /> <span className="text-red-600 ">Email</span>:
                 hello@domain.com
               </p>
               <br /> <br />
@@ -85,8 +85,8 @@ const Contact = () => {
               <p className="mt-2">
                 <span className="text-red-600 ">Address</span>: 1600
                 Pennsylvania Ave NW, Washington, DC 20500 <br />{" "}
-                <span className="text-green-700">Phone</span>: +990 (312) 123 45
-                67 <br /> <span className="text-[#1F2659]">Email</span>:
+                <span className="text-red-600 ">Phone</span>: +990 (312) 123 45
+                67 <br /> <span className="text-red-600 ">Email</span>:
                 hello@domain.com
               </p>
               <br />
